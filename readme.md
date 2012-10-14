@@ -13,10 +13,9 @@ see `index.html`
 <script src="js/jquery.jbar2.js"></script>
 <link rel="stylesheet" href="css/bar.css">
 <script>
-$(function() {
-	$.jBar.show('message');
-});
-</script>
+$(document).ready(function() {
+	$.jBar.init('message', {position: 'bottom'});
+});</script>
 ```
 
 ## Acknowledgements
@@ -25,8 +24,7 @@ Code based on [jbar](http://www.toddmotto.com/jbar-plugin-the-jquery-call-to-act
 
 ## TODO
 
-  - implement bottom bar: wrap all bar markup in `<div>` and add class `bottom` to it.
-  - support settings (`position`, `color`, `state`, `delay`)
+  - support settings (`color`)
   - implement example with sharing buttons (addthis)
   - implement example showing latest tweets
   - online demo

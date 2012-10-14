@@ -4,7 +4,6 @@
 	padding:5px;
 	background:#DB5903 url(../img/shine.png) repeat-x 0 0;
 	color:#FFF;
-	border-bottom:3px solid #FFF;
 }
 
 .jBar .helloinner {
@@ -16,12 +15,11 @@
 
 .jBar .downarrow {
 	position:absolute;
-	top:10px;
-	right:65px;
+	top:5px;
+	right:55px;
 	background:url(../img/arrow-up.png) no-repeat center center;
-	width:17px;
-	height:19px;
-	display:inline-block;
+	width:35px;
+	height:33px;
 	padding:0;
 	margin:0;
 }
@@ -40,8 +38,6 @@
 	padding:5px 10px;
 	background:#F9F9F9;
 	border-radius:3px;
-	-webkit-border-radius:3px;
-	-moz-border-radius:3px;
 	box-shadow:0 0 5px #777;
 }
 
@@ -52,27 +48,53 @@
 
 .jRibbon {
 	position:absolute;
-	top:0px;
 	right:50px;
 	padding:3px;
 	background:#DF5A02 url(../img/arrow-down.png) no-repeat center center;
 	width:35px;
 	height:33px;
 	border:3px solid #FFF;
-	border-top:none;
 	box-shadow:0 2px 5px #777;
 	color:#FFF;
 	border-radius:0 0 3px 3px;
 }
 
-.jRibbon:hover {
-	background:#DF5A02 url(../img/arrow-down.png) no-repeat center center;
+.jTrigger {
+	cursor:pointer;
 }
 
-.jRibbon.up {
+.top .jBar{
+	border-bottom:3px solid #FFF;
+}
+
+.top .jRibbon {
+	top:0px;
+	border-top:none;
+}
+
+.top .jRibbon.up {
 	top:-50px;
 }
 
-.jTrigger {
-	cursor:pointer;
+.bottom .jBar {
+	position:fixed;
+	bottom:0;
+	left:0;
+	right:0;
+	border-top:3px solid #FFF;
+}
+
+.bottom .jRibbon {
+	bottom:0px;
+	border-bottom:none;
+	border-radius:3px 3px 0 0;
+	background:#DF5A02 url(../img/arrow-up.png) no-repeat center center;
+}
+
+.bottom .jRibbon.up {
+	bottom:-50px;
+}
+
+.bottom .jBar .downarrow {
+	background:url(../img/arrow-down.png) no-repeat center center;
 }
