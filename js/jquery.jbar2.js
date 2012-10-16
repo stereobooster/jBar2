@@ -1,4 +1,4 @@
-/* jBar v0.2.0 https://github.com/stereobooster/jBar2 */
+/* jBar v0.3.0 https://github.com/stereobooster/jBar2 */
 ;(function ($, undefined) {
     var defaults = {
             position: 'top', // top, bottom
@@ -34,6 +34,11 @@
                         set('state', opened ? 'opened' : 'closed');
                     }
                 });
+
+                if (options.color) {
+                    ribbon.css('background-color', options.color);
+                    bar.css('background-color', options.color);
+                }
 
                 jBar.html(html);
 
