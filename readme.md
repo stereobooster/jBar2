@@ -24,8 +24,7 @@ Code based on [jbar](http://www.toddmotto.com/jbar-plugin-the-jquery-call-to-act
 
 ## TODO
 
-  - support settings (`color`)
   - implement example with sharing buttons (addthis)
   - implement example showing latest tweets
   - online demo
-
+  - support settings (`color`)
