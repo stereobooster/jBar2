@@ -11,7 +11,7 @@ see `index.html`
 ```html
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 <script src="js/jquery.jbar2.js"></script>
-<link rel="stylesheet" href="css/bar.css">
+<link rel="stylesheet" href="css/jbar2.css">
 <script>
 $(document).ready(function() {
 	$.jBar.init('message', {position: 'bottom'});
@@ -27,3 +27,8 @@ Code based on [jbar](http://www.toddmotto.com/jbar-plugin-the-jquery-call-to-act
   - implement example with sharing buttons (addthis)
   - implement example showing latest tweets
   - online demo
+  - implement it without images using ⇩ and ⇧
+  - combine images in sprite
+  - responsive design
+  - news ticker
+
